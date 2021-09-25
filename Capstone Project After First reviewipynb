@@ -3301,8 +3301,8 @@
     }
    ],
    "source": [
-    "# add country name\n",
-    "# map the country name using country_cd \n",
+    "# Add country name\n",
+    "# Map the country name using country_cd \n",
     "@udf('string')\n",
     "def map_country_name(code):\n",
     "    country_name = country_cd[country_cd['Code']==code]['Name'].iloc[0]\n",
